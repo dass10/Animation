@@ -70,8 +70,12 @@ width: 100px;
 
 @keyframes  secondAnimation {
     0% {background-color: darksalmon}
-    20%{background-color: red}
-    40%{}
+    20% {background-color: red}
+    40% {background-color: aqua}
+    60% {background-color: gold}
+    80% {background-color: darkorange}
+    100% {background-color: darkred}
+}
 
 
 
