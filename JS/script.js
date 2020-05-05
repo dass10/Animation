@@ -26,12 +26,24 @@ function showAlert(){
 }
 
 function moveImage() {
-    image = document.getElementById("movingImage");
+    image = document.getElementById("movingImg");
     x = 10; //left
     y = 10; //top
     speed = Number(document.getElementById("speedInput").value);
     //create a function in loop,and loop it each half second
     setInterval(function () {
+        if (x <500 && y <= 10){
+            x = x + speed;
+        }
+        if (x >= 500 && y < 500){
+            y = y + speed;
+        }
+        if (x > 10 && y >= 500){
+            x = x - speed;
+        }
+        if (x <= 10 && y >10){
+            y = y - speed;
+        }
 
         x=x+speed;
         y=y+speed;
